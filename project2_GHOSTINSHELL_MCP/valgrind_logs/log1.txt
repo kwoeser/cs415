@@ -1,0 +1,115 @@
+==224201== Memcheck, a memory error detector
+==224201== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==224201== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==224201== Command: ./part1 -f input.txt
+==224201== 
+==224201== Invalid write of size 4
+==224201==    at 0x109488: execute (part1.c:34)
+==224201==    by 0x1096E1: main (part1.c:90)
+==224201==  Address 0x4a8d2b0 is 0 bytes after a block of size 16 alloc'd
+==224201==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==224201==    by 0x109683: main (part1.c:81)
+==224201== 
+==224201== Invalid read of size 4
+==224201==    at 0x1094A4: execute (part1.c:35)
+==224201==    by 0x1096E1: main (part1.c:90)
+==224201==  Address 0x4a8d2b0 is 0 bytes after a block of size 16 alloc'd
+==224201==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==224201==    by 0x109683: main (part1.c:81)
+==224201== 
+==224201== Invalid read of size 4
+==224201==    at 0x1094DD: execute (part1.c:41)
+==224201==    by 0x1096E1: main (part1.c:90)
+==224201==  Address 0x4a8d2b0 is 0 bytes after a block of size 16 alloc'd
+==224201==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==224201==    by 0x109683: main (part1.c:81)
+==224201== 
+==224201== Invalid read of size 4
+==224201==    at 0x109534: execute (part1.c:49)
+==224201==    by 0x1096E1: main (part1.c:90)
+==224201==  Address 0x4a8d2b0 is 0 bytes after a block of size 16 alloc'd
+==224201==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==224201==    by 0x109683: main (part1.c:81)
+==224201== 
+==224207== Invalid write of size 4
+==224207==    at 0x109488: execute (part1.c:34)
+==224207==    by 0x1096E1: main (part1.c:90)
+==224207==  Address 0x4a8d2b0 is 0 bytes after a block of size 16 alloc'd
+==224207==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==224207==    by 0x109683: main (part1.c:81)
+==224207== 
+==224207== Invalid read of size 4
+==224207==    at 0x1094A4: execute (part1.c:35)
+==224207==    by 0x1096E1: main (part1.c:90)
+==224207==  Address 0x4a8d2b0 is 0 bytes after a block of size 16 alloc'd
+==224207==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==224207==    by 0x109683: main (part1.c:81)
+==224207== 
+==224207== Invalid read of size 4
+==224207==    at 0x1094DD: execute (part1.c:41)
+==224207==    by 0x1096E1: main (part1.c:90)
+==224207==  Address 0x4a8d2b0 is 0 bytes after a block of size 16 alloc'd
+==224207==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==224207==    by 0x109683: main (part1.c:81)
+==224207== 
+total 228
+ 4 valgrind_logs
+ 4 screenshots
+ 8 part4.c
+24 part4
+ 8 part3.c
+24 part3
+ 4 part2.c
+24 part2
+ 4 part1.c
+24 part1
+ 4 log1.txt
+ 4 iobound.c
+20 iobound
+ 4 input.txt
+ 4 cpubound.c
+20 cpubound
+32 Project2Report.docx
+ 4 Makefile
+ 4 ..
+ 4 .
+Error during execvp process: No such file or directory
+Parent Proccess: #224201
+Starting process 224203
+Starting process 224204
+==224205== 
+==224205== HEAP SUMMARY:
+==224205==     in use at exit: 488 bytes in 2 blocks
+==224205==   total heap usage: 4 allocs, 2 frees, 8,680 bytes allocated
+==224205== 
+==224205== LEAK SUMMARY:
+==224205==    definitely lost: 0 bytes in 0 blocks
+==224205==    indirectly lost: 0 bytes in 0 blocks
+==224205==      possibly lost: 0 bytes in 0 blocks
+==224205==    still reachable: 488 bytes in 2 blocks
+==224205==         suppressed: 0 bytes in 0 blocks
+==224205== Reachable blocks (those to which a pointer was found) are not shown.
+==224205== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==224205== 
+==224205== For lists of detected and suppressed errors, rerun with: -s
+==224205== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+Process: 224206 - Begining to write to file.
+Process: 224206 - Finished.
+Process: 224207 - Begining calculation.
+Process: 224207 - Finished.
+Parent Proccess: #224201
+Starting process 224203
+Starting process 224204
+Starting process 224205
+Starting process 224206
+Starting process 224207
+Processes have finished.
+==224201== 
+==224201== HEAP SUMMARY:
+==224201==     in use at exit: 0 bytes in 0 blocks
+==224201==   total heap usage: 4 allocs, 4 frees, 8,680 bytes allocated
+==224201== 
+==224201== All heap blocks were freed -- no leaks are possible
+==224201== 
+==224201== For lists of detected and suppressed errors, rerun with: -s
+==224201== ERROR SUMMARY: 4 errors from 4 contexts (suppressed: 0 from 0)

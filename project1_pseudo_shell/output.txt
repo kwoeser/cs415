@@ -1,0 +1,19 @@
+/home/karma/cs415/project1-pseudo-shell
+Error! Unrecognized command: sfjlksagjlks
+.. . 
+/home/karma/cs415/project1-pseudo-shell/test
+/home/karma/cs415/project1-pseudo-shell/test
+input.txt .. . 
+pwd ; mkdir test ; cd test
+sfjlksagjlks;ls; pwd;
+cd .. ; cd test ; pwd
+cp ../input.txt . ; ls ; cat input.txt
+mv input.txt del.txt ; pwd ; ls
+rm del.txt ; ls
+cd .. ; pwd
+ls; pw
+/home/karma/cs415/project1-pseudo-shell/test
+del.txt .. . 
+.. . 
+/home/karma/cs415/project1-pseudo-shell
+input.txt command.o test pseudo-shell string_parser.c string_parser.h string_parser.o main.o README.txt output.txt main.c command.h command.c .. Makefile test_script.sh . 
